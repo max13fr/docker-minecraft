@@ -95,8 +95,6 @@ update_permissions() {
 }
 
 run_minecraft() {
-    MINECRAFT_OPTS=${MINECRAFT_OPTS:-"-server -Xmx1024m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC"}
-
     pushd $MINECRAFT_HOME > /dev/null
     echo "Running Minecraft"
     echo "MINECRAFT_OPTS: $MINECRAFT_OPTS"
