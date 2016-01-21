@@ -17,7 +17,6 @@ ENV MINECRAFT_SRC /usr/src/minecraft
 ENV MINECRAFT_VERSION 1.8.8
 ENV MINECRAFT_OPTS "-server -Xmx1024m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC"
 
-
 # Add user
 RUN groupadd -g 1000 minecraft && \
     useradd -g minecraft -u 1000 -r -M minecraft && \
