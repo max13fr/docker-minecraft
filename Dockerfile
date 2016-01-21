@@ -14,7 +14,9 @@ RUN apt-get update && apt-get install -y curl rsync && rm -rf /var/lib/apt/lists
 ENV MINECRAFT_HOME /opt/minecraft
 ENV MINECRAFT_OPTS -server -Xmx1024m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
 ENV MINECRAFT_SRC /usr/src/minecraft
+ENV MINECRAFT_VERSION 1.8.8
 
+# Add user
 RUN groupadd -g 1000 minecraft && \
     useradd -g minecraft -u 1000 -r -M minecraft && \
     touch /run/first_time && \
