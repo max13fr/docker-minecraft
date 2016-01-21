@@ -28,7 +28,7 @@ also serves as the base image for some of my Modded Minecraft server images.
         -v /srv/minecraft-map:/opt/minecraft/world
         max13fr/minecraft
 
-By default, this starts up a Minecraft 1.8.1 server instance. If you wish to
+By default, this starts up a Minecraft 1.8.8 server instance. If you wish to
 start a different Minecraft server version, you need to set the
 `MINECRAFT_VERSION` variable to the appropriate version.
 
@@ -52,8 +52,6 @@ on time and the hassle of an extra step), I cannot due to the [Minecraft EULA][]
 This image has one data volume: `/opt/minecraft`. This volume contains world
 data. This is a deliberate decision in order to support building Docker images
 with a world template (useful for custom maps).
-
-Please do a chmod 700 & chown 1000 on volume to allow writing.
 
 
 ### Environment Variables
